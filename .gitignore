@@ -2,7 +2,6 @@
 Icon?
 Thumbs.db
 .idea
-.vscode
 
 # Node Files #
 /node_modules
