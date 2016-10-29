@@ -1,5 +1,5 @@
 <h3 align="center">
-	<img width="380" src="https://github.com/DeviantJS/angular2-seed-ultimate/blob/master/.github/assets/webpack-multi-logo.png" alt="Angular2 Seed Ultimate">
+	<img width="380" src="https://github.com/DeviantJS/angular-seed-ultimate/blob/master/.github/assets/webpack-multi-logo.png" alt="Angular2 Seed Ultimate">
 	<br>
 </h3>
 
