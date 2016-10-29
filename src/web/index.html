@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    <%= htmlWebpackPlugin.options.meta.title %>
+  </title>
+  <meta name="description" content="<%= htmlWebpackPlugin.options.meta.title %>">
+  <% if (webpackConfig.htmlElements.headTags) { %>
+    <!-- Head Tags  -->
+    <%= webpackConfig.htmlElements.headTags %>
+      <% } %>
+        <!-- base url -->
+        <base href="/">
+</head>
+
+<body>
+  <my-app>
+    Loading...
+  </my-app>
+
+  <% if (htmlWebpackPlugin.options.isWebpackDevServer) { %>
+    <!-- Webpack Dev Server -->
+    <script src="/webpack-dev-server.js"></script>
+    <% } %>
+      <% if (htmlWebpackPlugin.options.isDev) { %>
+        <!-- Webpack Dev Server -->
+        <script src="/polyfills.dll.js"></script>
+        <script src="/vendors.dll.js"></script>
+        <script src="/rxjs.dll.js"></script>
+        <% } %>
+</body>
+
+</html>
