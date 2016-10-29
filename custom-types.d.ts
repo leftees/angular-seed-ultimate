@@ -1,11 +1,10 @@
 type Entry = Array<string> | Object;
+type EnvOptions = any;
 
 type Output = Array<string> | {
   path: string,
   filename: string
 };
-
-type EnvOptions = any;
 
 interface WebpackConfig {
   cache?: boolean;
