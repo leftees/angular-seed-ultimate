@@ -1,0 +1,46 @@
+{
+  "name": "angular-seed-ultimate",
+  "version": "0.0.1",
+  "description": "Reactive Angular2 Multi-Platform Seed",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:DeviantJS/angular-seed-ultimate.git",
+    "type": "git"
+  },
+  "contributors": [
+    { "name": "Joshua Wiens <@d3viant0ne>" },
+    { "name": "Nathan Walkker <@NathanWalker>" }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.46",
+    "assets-webpack-plugin": "^3.5.0",
+    "awesome-typescript-loader": "^2.2.4",
+    "es6-promise": "^4.0.5",
+    "es6-shim": "^0.35.1",
+    "json-loader": "^0.5.4",
+    "ts-helpers": "^1.1.2",
+    "ts-loader": "^0.9.5",
+    "ts-node": "^1.6.1",
+    "typescript": "^2.0.6",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "@angular/common": "^2.1.2",
+    "@angular/compiler": "^2.1.2",
+    "@angular/compiler-cli": "^2.1.2",
+    "@angular/core": "^2.1.2",
+    "@angular/forms": "^2.1.2",
+    "@angular/http": "^2.1.2",
+    "@angular/platform-browser": "^2.1.2",
+    "@angular/platform-browser-dynamic": "^2.1.2",
+    "@angular/platform-server": "^2.1.2",
+    "@angular/router": "^3.1.2",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.0.0-rc.1",
+    "zone.js": "^0.6.26"
+  }
+}
