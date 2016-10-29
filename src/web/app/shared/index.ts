@@ -1,7 +1,7 @@
 /**
  * Shared Module
  * Allows sharing of Components, Services & Vendor modules
- * across the application.
+ * across the Web Platform application.
  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
