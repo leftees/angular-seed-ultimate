@@ -1,0 +1,53 @@
+# circle.yml
+machine:
+  pre:
+    - mkdir ~/.yarn-cache
+  services:
+    - docker
+  node:
+    version: 6.9.1
+  post:
+    - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+    - sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+    - sudo apt-get update
+    - sudo apt-get install google-chrome-stable
+
+dependencies:
+  pre:
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+  cache_directories:
+    - ~/.yarn-cache
+  override:
+      - yarn install
+      - npm run build:dev
+      - docker info
+      - if [[ -e ~/docker/image.tar ]]; then docker load --input ~/docker/image.tar; fi
+      - docker build -t deviantjs/demo-client .
+      - mkdir -p ~/docker; docker save deviantjs/demo-client > ~/docker/image.tar
+
+test:
+  # pre:
+  #   - npm start:
+  #       background: true
+  #   - sleep 5
+  override:
+    - npm run ci
+    # - npm run scan:security
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - find . -type f -regex ".*/results/junit/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+    - npm run report-codeclimate
+
+deployment:
+  hub:
+    branch: develop
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker tag deviantjs/demo-client deviantjs/demo-client:$CIRCLE_BRANCH
+      - docker push deviantjs/demo-client
+
+general:
+  artifacts:
+    - "coverage"
+    - $CIRCLE_TEST_REPORTS
+    - "dist"
