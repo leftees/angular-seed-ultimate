@@ -27,6 +27,10 @@ import {
 } from './services';
 
 import {
+  SharedPlatformModule
+} from '../../../shared';
+
+import {
 
 } from './validators';
 
@@ -51,7 +55,7 @@ const ASU_PIPES = [
 ];
 
 const ASU_SERVICES = [
-
+  SharedPlatformModule
 ];
 
 const ASU_VALIDATORS = [

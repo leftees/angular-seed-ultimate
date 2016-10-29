@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /**
- * Web Platform Features Module
+ * Module for cross-platform sharing of services
  * @export
- * @class FeaturesModule
+ * @class SharedPlatformModule
  */
 @NgModule({
   imports: [
@@ -17,4 +17,4 @@ import { CommonModule } from '@angular/common';
 
   ]
 })
-export class FeaturesModule {}
+export class SharedPlatformModule {}

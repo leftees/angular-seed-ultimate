@@ -1,13 +1,14 @@
 import { ApplicationRef, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-
-import { removeNgStyles, createNewHosts, createInputTransfer } from '@angularclass/hmr';
-
 import { Store } from '@ngrx/store';
+import {
+  removeNgStyles,
+  createNewHosts,
+  createInputTransfer
+} from '@angularclass/hmr';
 
 import { AppComponent } from './app.component';
-
 import { AppState } from './reducers';
 
 @NgModule({
