@@ -26,15 +26,13 @@ Reactive Angular2 Multi-Platform Seed with tooling for Web, Mobile Native Platfo
 #### What's inside?:
 - [Angular2](https://github.com/angular/angular): Angular is a development platform for building mobile and desktop web applications.
   - [ngrx/store](https://github.com/ngrx/store): RxJS powered state management, inspired by **Redux**.
-  - [ng2-translate](https://github.com/ocombe/ng2-translate): An implementation of angular translate for Angular 2.
-  - [angulartics2](https://github.com/angulartics/angulartics2): Vendor-agnostic analytics for Angular2 applications.
+- [Angular Universal](https://github.com/angular/universal): Universal (isomorphic) javascript support for Angular2.
 - [NativeScript](https://www.nativescript.org/): Cross platform mobile (w/ native UI) apps.
 - [Webpack2](https://github.com/webpack/webpack): A bundler for javascript and friends.
   - [Tree Shaking](https://github.com/webpack/webpack/issues/2867): Keeping those deps tidy ( when it's not broken :/ )
   - [DLL Plugin](https://github.com/webpack/webpack/tree/master/examples/dll): for faster development builds.
   - [Hot Module Replacement](https://webpack.github.io/docs/hot-module-replacement.html): a feature to inject updated modules into the active runtime.
   - [Http2 Aggressive Splitting](https://github.com/webpack/webpack/tree/master/examples/http2-aggressive-splitting): Because faster is better.
-- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets): Cascading Style Sheets.
 - [SCSS](http://sass-lang.com/): CSS extension language.
 
 Please note this is not an `all the things` starter project. Libs like `Material2 & Bootstrap` will not be added though adding a Wiki page for integration instructions is always welcome.
