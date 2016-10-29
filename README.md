@@ -15,6 +15,7 @@ Reactive Angular2 Multi-Platform Seed with tooling for Web, Mobile & Desktop Pla
 - [Webpack2](https://github.com/webpack/webpack): A bundler for javascript and friends.
   - [Tree Shaking](https://github.com/webpack/webpack/issues/2867): Keeping those deps tidy ( when it's not broken :/ )
   - [DLL Plugin](https://github.com/webpack/webpack/tree/master/examples/dll): for faster development builds.
+  - [Hot Module Replacement](https://webpack.github.io/docs/hot-module-replacement.html): a feature to inject updated modules into the active runtime.
   - [Http2 Aggressive Splitting](https://github.com/webpack/webpack/tree/master/examples/http2-aggressive-splitting): Because faster is better.
 
 #### Supported Versions
