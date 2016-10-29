@@ -38,6 +38,3 @@ if (!isForce) {
     stream.pipe(getOutputStream());
   });
 }
-
-/* eslint no-console: ["error", { allow: ["warn", "error"] }] */
-/* eslint no-process-exit: 0 */
