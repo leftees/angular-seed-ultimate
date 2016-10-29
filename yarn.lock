@@ -52,6 +52,30 @@
   dependencies:
     tsickle "^0.1.7"
 
+"@ngrx/core":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/core/-/core-1.2.0.tgz#882b46abafa2e0e6d887cb71a1b2c2fa3e6d0dc6"
+
+"@ngrx/effects":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-2.0.0.tgz#db4c3e1b69030229cb6b908477115b3479e4c4e0"
+
+"@ngrx/router-store":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-1.2.5.tgz#1cff82c5488fab995872c6f0d57a29a7ac91e598"
+
+"@ngrx/store":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-2.2.1.tgz#316ec1e43aa5a0166e5e6e1aa2c34a4049386510"
+
+"@ngrx/store-devtools":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-3.2.1.tgz#2b5c3c438a1c6e0181251fadba0d071b2cbcf6c2"
+
+"@ngrx/store-log-monitor":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@ngrx/store-log-monitor/-/store-log-monitor-3.0.2.tgz#951dc2e3d8ba0113ea4ed6744d9ce7640fee3271"
+
 "@types/core-js":
   version "0.9.34"
   resolved "https://registry.yarnpkg.com/@types/core-js/-/core-js-0.9.34.tgz#72c521d8e59fdaa8b65f76db71fa53c82c7c21c5"
@@ -459,6 +483,10 @@ decamelize@^1.0.0:
 deep-extend@~0.4.0:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.1.tgz#efe4113d08085f4e6f9687759810f807469e2253"
+
+deep-freeze@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/deep-freeze/-/deep-freeze-0.0.1.tgz#3a0b0005de18672819dfd38cd31f91179c893e84"
 
 delayed-stream@~1.0.0:
   version "1.0.0"
@@ -1275,6 +1303,16 @@ nan@^2.3.0:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+ngrx-store-freeze:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/ngrx-store-freeze/-/ngrx-store-freeze-0.1.4.tgz#7994ad26878a503603606b9eb25ccdb61269750f"
+  dependencies:
+    deep-freeze "^0.0.1"
+
+ngrx-store-logger:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/ngrx-store-logger/-/ngrx-store-logger-0.1.7.tgz#da3b17d230e92d99c849333b08a52a7b08b884fe"
 
 node-libs-browser@^0.6.0:
   version "0.6.0"
