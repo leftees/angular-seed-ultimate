@@ -6,7 +6,7 @@
 ## Angular2 Seed Ultimate
 Reactive Angular2 Multi-Platform Seed with tooling for Web, Mobile & Desktop Platforms **powered by** [Webpack2](https://webpack.github.io).
 
-#### What's inside Pandora's Box?:
+#### What's inside?:
 - [Angular2](https://github.com/angular/angular): Angular is a development platform for building mobile and desktop web applications.
   - [ngrx/store](https://github.com/ngrx/store): RxJS powered state management, inspired by **Redux**.
   - [ng2-translate](https://github.com/ocombe/ng2-translate): An implementation of angular translate for Angular 2.
