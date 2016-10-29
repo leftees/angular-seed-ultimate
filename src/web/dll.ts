@@ -72,3 +72,12 @@ export function vendors(env?: any) {
     '@angular/http',
   ];
 }
+
+/**
+ * Custom Vendor Imports
+ */
+export function custom_vendors(env?: any) {
+  return [
+    // Your extended Vendor libs go here :)
+  ];
+}
